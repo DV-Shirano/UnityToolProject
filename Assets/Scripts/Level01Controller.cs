@@ -6,13 +6,12 @@ using UnityEngine.UI;
 
 public class Level01Controller : MonoBehaviour
 {
-    [SerializeField] Text currentScoreTextView;
-    [SerializeField] Text currentScoreTextViewGO;
-    [SerializeField] Text currentScoreTextViewWIN;
-
+    
     public GameObject pauseMenuUI;
     public GameObject hud;
     public GameObject gun;
+
+    [SerializedField]
 
     public static float currentScore;
     public static bool Paused = false;

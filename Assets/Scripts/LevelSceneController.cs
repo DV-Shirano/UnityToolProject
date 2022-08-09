@@ -12,6 +12,9 @@ public class LevelSceneController : MonoBehaviour
 
     public static bool Paused = false;
 
+    [Header("Pause Button Assign")]
+    public KeyCode pauseKey = KeyCode.Escape;
+
     private void Awake()
     {
         Time.timeScale = 1f;
@@ -20,7 +23,7 @@ public class LevelSceneController : MonoBehaviour
 
     private void Update()
     {
-        if (Input.GetKeyDown(KeyCode.R))
+        if (Input.GetKeyDown(pauseKey))
         {
             Debug.Log("Restarted");
 
@@ -28,9 +31,9 @@ public class LevelSceneController : MonoBehaviour
             SceneManager.LoadScene(_sceneToReload.name);
         }
 
-        if (Input.GetKeyDown(KeyCode.Escape))
+        if (Input.GetKeyDown(pauseKey))
         {
-            Debug.Log("escape hit");
+            Debug.Log("pause hit");
 
             if (Paused)
             {

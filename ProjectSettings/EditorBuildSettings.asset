@@ -6,9 +6,9 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/Scenes/Start scene.unity
+    path: Assets/SimpleLoader&UIController/Scenes/Start scene.unity
     guid: dc22e2e50d2dbaf4097d98798cd2b05f
   - enabled: 1
-    path: Assets/Scenes/SampleScene.unity
+    path: Assets/SimpleLoader&UIController/Scenes/Example.unity
     guid: 9fc0d4010bbf28b4594072e72b8655ab
   m_configObjects: {}

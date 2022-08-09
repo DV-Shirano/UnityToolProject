@@ -12,8 +12,9 @@ public class LevelSceneController : MonoBehaviour
 
     public static bool Paused = false;
 
-    [Header("Pause Button Assign")]
+    [Header("Button Assign")]
     public KeyCode pauseKey = KeyCode.Escape;
+    public KeyCode restartKey = KeyCode.R;
 
     private void Awake()
     {
@@ -23,7 +24,7 @@ public class LevelSceneController : MonoBehaviour
 
     private void Update()
     {
-        if (Input.GetKeyDown(pauseKey))
+        if (Input.GetKeyDown(restartKey))
         {
             Debug.Log("Restarted");
 
